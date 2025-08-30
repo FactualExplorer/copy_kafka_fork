@@ -66,4 +66,12 @@ public class MetadataVersionConfigValidator implements MetadataPublisher {
                     "Broker configuration does not support the cluster MetadataVersion", t);
         }
     }
+    @Override
+    @SuppressWarning
+    private abstract void versionMeta_change_modification(T[] obj,T[] obj2);
+
+    @RequestMapping
+    @RequestParam
+    publiv abstarct void version_changelog(Object arr);
+        
 }
